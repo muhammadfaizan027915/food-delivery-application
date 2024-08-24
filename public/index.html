@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <title>Food Delivery Applicatoin using tailwind css</title>
+  </head>
+  <body class="scroll-m-0">
+    <!-- Hero Section -->
+    <div
+      class="h-auto min-h-screen bg-[url('../assets/images/Background.png')] bg-cover"
+    >
+      <div
+        class="bg-zinc-800 relative top-0 left-0 w-full min-h-screen bg-opacity-70"
+      >
+        <nav class="flex justify-between items-center py-5 px-2 z-10 sm:px-10">
+          <div>
+            <a href="#">
+              <img src="../assets/images/Logo.png" alt="logo" class="w-16" />
+            </a>
+          </div>
+          <div>
+            <ul class="text-l font-medium flex sm:gap-10 gap-4 text-white">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Offers</a></li>
+              <li><a href="#">Gallery</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div
+          class="flex flex-col gap-10 items-center lg:flex-row px-2 z-10 lg:px-10"
+        >
+          <div class="w-full sm:1/2 p-5">
+            <img
+              src="/assets/images/Hero Image.png"
+              alt="hero image"
+              class="lg:w-full w-96 mt-12 m-auto sm:mt-0"
+            />
+          </div>
+
+          <div class="w-full text-center lg:text-left md:p-10">
+            <h1
+              class="text-4xl lg:text-5xl font-bold text-yellow-500 leading-tight"
+            >
+              Contact Us For Best Breakfast
+            </h1>
+            <p class="text-white mt-4 hidden lg:block">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+              consequuntur, magni quos exercitationem, autem molestias
+            </p>
+
+            <button
+              class="py-3 px-4 mt-4 mb-10 rounded bg-yellow-500 text-white font-semibold"
+            >
+              CONTACT US
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="flex flex-col md:flex-row bg-zinc-900">
+      <div class="w-full md:w-1/2 p-10 sm:p-16 lg:p-24">
+        <img
+          src="/assets/images/About us.png"
+          alt="About Image"
+          class="w-full m-auto"
+        />
+      </div>
+      <div
+        class="w-full md:w-1/2 px-10 sm:px-16 md:pt-16 md:px-0 lg:py-24 md:mt-8 text-white mb-8 relative"
+      >
+        <h1 class="text-4xl font-semibold">About</h1>
+        <p class="md:max-w-[70%] mt-4 leading-8 text-lg text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+          praesentium. Labore harum, commodi qui non facere et inventore
+          incidunt iusto obcaecati provident totam nostrum. Repudiandae esse
+          voluptate deserunt incidunt repellat officiis sint odio quidem
+          tempore, totam, tenetur necessitatibus quia quisquam accusamus
+          nesciunt voluptatem mollitia beatae dolore expedita
+        </p>
+      </div>
+    </div>
+
+    <!-- Food Quality Section -->
+    <div class="bg-zinc-900 relative md:overflow-hidden">
+      <!-- <svg
+        id="wave"
+        style="transform: rotate(0deg); transition: 0.3s"
+        viewBox="0 0 1440 490"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        class="relative -bottom-0 -left-28"
+      >
+        <defs>
+          <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+            <stop stop-color="rgba(243, 160.483, 62, 1)" offset="0%"></stop>
+            <stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <path
+          style="transform: translate(0, 0px); opacity: 1"
+          fill="url(#sw-gradient-0)"
+          d="M0,441L60,383.8C120,327,240,212,360,171.5C480,131,600,163,720,204.2C840,245,960,294,1080,261.3C1200,229,1320,114,1440,73.5C1560,33,1680,65,1800,106.2C1920,147,2040,196,2160,204.2C2280,212,2400,180,2520,138.8C2640,98,2760,49,2880,98C3000,147,3120,294,3240,367.5C3360,441,3480,441,3600,441C3720,441,3840,441,3960,400.2C4080,359,4200,278,4320,228.7C4440,180,4560,163,4680,155.2C4800,147,4920,147,5040,171.5C5160,196,5280,245,5400,277.7C5520,310,5640,327,5760,326.7C5880,327,6000,310,6120,269.5C6240,229,6360,163,6480,114.3C6600,65,6720,33,6840,16.3C6960,0,7080,0,7200,16.3C7320,33,7440,65,7560,89.8C7680,114,7800,131,7920,114.3C8040,98,8160,49,8280,40.8C8400,33,8520,65,8580,81.7L8640,98L8640,490L8580,490C8520,490,8400,490,8280,490C8160,490,8040,490,7920,490C7800,490,7680,490,7560,490C7440,490,7320,490,7200,490C7080,490,6960,490,6840,490C6720,490,6600,490,6480,490C6360,490,6240,490,6120,490C6000,490,5880,490,5760,490C5640,490,5520,490,5400,490C5280,490,5160,490,5040,490C4920,490,4800,490,4680,490C4560,490,4440,490,4320,490C4200,490,4080,490,3960,490C3840,490,3720,490,3600,490C3480,490,3360,490,3240,490C3120,490,3000,490,2880,490C2760,490,2640,490,2520,490C2400,490,2280,490,2160,490C2040,490,1920,490,1800,490C1680,490,1560,490,1440,490C1320,490,1200,490,1080,490C960,490,840,490,720,490C600,490,480,490,360,490C240,490,120,490,60,490L0,490Z"
+        ></path>
+      </svg> -->
+      <div class="z-20 pt-8 md:pt-0">
+        <div
+          class="flex flex-col md:flex-row-reverse sm:px-10 md:px-16 lg:px-24"
+        >
+          <img
+            src="/assets/images/Food Quality_1.png"
+            alt="Quality Food Image"
+            class="w-72 h-72 lg:w-80 lg:h-80 m-auto"
+          />
+          <div class="text-white p-8">
+            <h1 class="text-4xl font-semibold">Our Food Quality</h1>
+            <p
+              class="w-full md:max-w-[500px] mt-4 leading-8 text-lg text-justify"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              iste natus eius repellat itaque? Eveniet recusandae quidem
+              consequuntur. Aliquid minima natus maxime nesciunt totam obcaecati
+              a
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Section -->
+
+    <div class="p-8 lg:px-24 bg-zinc-900 text-white">
+      <h1 class="text-4xl font-semibold text-center mb-10">Our Food Gallery</h1>
+      <div
+        class="flex gap-4 lg:flex-wrap lg:justify-between mt-8 overflow-x-auto scrollbar-hide"
+      >
+        <img src="/assets/images/Gallery_1.png" alt="" class="lg:max-w-[32%]" />
+        <img src="/assets/images/Gallery_2.png" alt="" class="lg:max-w-[32%]" />
+        <img src="/assets/images/Gallery_3.png" alt="" class="lg:max-w-[32%]" />
+        <img src="/assets/images/Gallery_4.png" alt="" class="lg:max-w-[32%]" />
+        <img src="/assets/images/Gallery_5.png" alt="" class="lg:max-w-[32%]" />
+        <img src="/assets/images/Gallery_1.png" alt="" class="lg:max-w-[32%]" />
+      </div>
+    </div>
+
+    <!-- Enjoy Our Food -->
+    <div
+      class="px-8 py-16 lg:py-32 bg-[url('../assets/images/Enjoy_your_food_background.png')] text-white"
+    >
+      <div class="bg-zinc-900 bg-opacity-80 border-yellow-500 border-4 p-8 max-w-md m-auto text-center">
+        <h1 class="text-3xl font-bold mb-3">Enjoy Our Food</h1>
+        <p class="">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, illum nam alias est eligendi neque temporibus quos? Dicta sunt perspiciatis sed? Dolorem delectus ea odio totam natus velit quos impedit libero! Fugiat, inventore pariatur odio laborum vitae mollitia velit ipsam nisi, doloremque eos eveniet laudantium facere nesciunt assumenda labore cupiditate?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
